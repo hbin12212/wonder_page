@@ -1,6 +1,12 @@
 .Home {
     font-family: "Inter", sans-serif;
     font-weight: 700;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
     @media (min-width: 450px) {
         .header {
             text-align: center;

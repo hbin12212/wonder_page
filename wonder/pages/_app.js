@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 //img
 import tags from "../public/img/tags.png";
 import content from "../public/img/content_mock.png";
@@ -31,7 +32,11 @@ const Home = () => {
                         <Image src={tags} alt="tags"></Image>
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn">Join Us</div>
+                        <div className="join_btn">
+                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank">
+                                Join Us
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="sector2">
@@ -98,7 +103,11 @@ const Home = () => {
                         새로운 커리어 네트워크
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn">Join Us</div>
+                        <div className="join_btn">
+                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank">
+                                Join Us
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
