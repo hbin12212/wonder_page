@@ -1,0 +1,365 @@
+.Home {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    @media (min-width: 450px) {
+        .header {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 450px) {
+        .header {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    .main {
+        //<-----SECTOR1----->
+        //전체화면
+        @media (min-width: 800px) {
+            .sector1 {
+                padding: 50px 150px 120px 150px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                }
+                .tags_img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        } //테블릿
+        @media (max-width: 800px) and (min-width: 450px) {
+            .sector1 {
+                padding: 50px 0px 100px 0px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                }
+                .tags_img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .join_btn_wrapper {
+                    padding: 0px 50px;
+                }
+            }
+        } //모바일
+        @media (max-width: 450px) {
+            .sector1 {
+                padding: 50px 0px 100px 0px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                }
+                .tags_img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .join_btn_wrapper {
+                    padding: 0px 50px;
+                }
+            }
+        }
+        //<-----SECTOR2,SECTOR3----->
+        //전체화면
+        @media (min-width: 1200px) {
+            .sector2 {
+                padding: 120px 150px;
+                display: flex;
+                justify-content: space-between;
+                .right_wrapper {
+                    img {
+                        width: 500px;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+            .sector3 {
+                padding: 120px 150px;
+                display: flex;
+                justify-content: space-between;
+                .right_wrapper {
+                    img {
+                        width: 500px;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+        } //테블릿1
+        @media (max-width: 1200px) and (min-width: 700px) {
+            .sector2 {
+                padding: 120px 150px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 80px;
+                    }
+                }
+                .right_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+            .sector3 {
+                padding: 120px 150px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 80px;
+                    }
+                }
+                .right_wrapper {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+        } //테블릿2
+        @media (max-width: 700px) and (min-width: 450px) {
+            .sector2 {
+                padding: 100px 50px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 80px;
+                    }
+                }
+                .right_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+            .sector3 {
+                padding: 100px 50px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 80px;
+                    }
+                }
+                .right_wrapper {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+        }
+        //모바일
+        @media (max-width: 450px) {
+            .sector2 {
+                padding: 100px 50px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 50px;
+                    }
+                }
+                .right_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+            .sector3 {
+                padding: 100px 50px;
+                text-align: center;
+                .left_wrapper {
+                    .sub_title {
+                        margin-bottom: 50px;
+                    }
+                }
+                .right_wrapper {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
+                    }
+                }
+            }
+        }
+
+        //<-----SECTOR4----->
+        @media (min-width: 800px) {
+            .sector4 {
+                padding: 120px 150px 50px 150px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+            }
+        } //테블릿
+        @media (max-width: 800px) and (min-width: 450px) {
+            .sector4 {
+                padding: 100px 50px 50px 50px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+            }
+        } //모바일
+        @media (max-width: 450px) {
+            .sector4 {
+                padding: 100px 50px 50px 50px;
+                .title {
+                    text-align: center;
+                }
+                .sub_title {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        //공통
+        //전체화면
+        @media (min-width: 800px) {
+            .title {
+                font-size: 40px;
+                margin-bottom: 35px;
+            }
+            .sub_title {
+                font-size: 20px;
+                color: #7b8498;
+            }
+            .join_btn_wrapper {
+                display: flex;
+                justify-content: center;
+                .join_btn {
+                    background-color: #a160ff;
+                    color: white;
+                    padding: 15px;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 700px;
+                    border-radius: 40px;
+                    font-size: 20px;
+                }
+            }
+        }
+        //테블릿
+        @media (max-width: 800px) and (min-width: 450px) {
+            .title {
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+            .sub_title {
+                font-size: 15px;
+                color: #7b8498;
+            }
+            .join_btn_wrapper {
+                display: flex;
+                justify-content: center;
+                .join_btn {
+                    background-color: #a160ff;
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    border-radius: 40px;
+                    font-size: 15px;
+                }
+            }
+        } //모바일
+        @media (max-width: 450px) {
+            .title {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .sub_title {
+                font-size: 10px;
+                color: #7b8498;
+            }
+            .join_btn_wrapper {
+                display: flex;
+                justify-content: center;
+                .join_btn {
+                    background-color: #a160ff;
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 100%;
+                    border-radius: 40px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    @media (min-width: 450px) {
+        .footer {
+            color: #7b8498;
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 450px) {
+        .footer {
+            color: #7b8498;
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 12px;
+        }
+    }
+}
