@@ -1,7 +1,6 @@
 import "../styles/globals.scss";
 import Script from "next/script";
 import Head from "next/head";
-import * as gtag from "../lib/gtag";
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -16,10 +15,7 @@ function MyApp({ Component, pageProps }) {
                     content="https://wonderkr.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftags.560726e3.png&w=1080&q=75"
                 />
             </Head>
-            <Script
-                strategy="afterInteractive"
-                src={`https://www.googletagmanager.com/gtag/js?id=${gtag?.GA_TRACKING_ID}`}
-            />
+            <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-H35M42X6VG`} />
             <Script
                 id="gtag-init"
                 strategy="afterInteractive"
@@ -28,7 +24,7 @@ function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${gtag?.GA_TRACKING_ID}', {
+            gtag('config', 'G-H35M42X6VG', {
               page_path: window.location.pathname,
             });
           `,
