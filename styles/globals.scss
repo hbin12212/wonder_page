@@ -369,18 +369,20 @@ $join_btn: #a160ff;
                 color: $sub_title;
             }
             .join_btn_wrapper {
-                display: flex;
-                justify-content: center;
-                .join_btn {
-                    background-color: $join_btn;
-                    color: white;
-                    padding: 15px;
-                    text-align: center;
-                    cursor: pointer;
-                    width: 400px;
-                    border-radius: 40px;
-                    font-size: $pc_sm;
-                    font-family: "medium";
+                a {
+                    display: flex;
+                    justify-content: center;
+                    .join_btn {
+                        background-color: $join_btn;
+                        color: white;
+                        padding: 15px;
+                        text-align: center;
+                        cursor: pointer;
+                        width: 400px;
+                        border-radius: 40px;
+                        font-size: $pc_sm;
+                        font-family: "medium";
+                    }
                 }
             }
         }
@@ -396,18 +398,20 @@ $join_btn: #a160ff;
                 color: $sub_title;
             }
             .join_btn_wrapper {
-                display: flex;
-                justify-content: center;
-                .join_btn {
-                    background-color: $join_btn;
-                    color: white;
-                    padding: 15px;
-                    text-align: center;
-                    cursor: pointer;
-                    width: 400px;
-                    border-radius: 40px;
-                    font-size: $tb_md;
-                    font-family: "medium";
+                a {
+                    display: flex;
+                    justify-content: center;
+                    .join_btn {
+                        background-color: $join_btn;
+                        color: white;
+                        padding: 15px;
+                        text-align: center;
+                        cursor: pointer;
+                        width: 400px;
+                        border-radius: 40px;
+                        font-size: $tb_md;
+                        font-family: "medium";
+                    }
                 }
             }
         } //모바일
@@ -422,18 +426,20 @@ $join_btn: #a160ff;
                 color: $sub_title;
             }
             .join_btn_wrapper {
-                display: flex;
-                justify-content: center;
-                .join_btn {
-                    background-color: $join_btn;
-                    color: white;
-                    padding: 10px;
-                    text-align: center;
-                    cursor: pointer;
-                    width: 100%;
-                    border-radius: 40px;
-                    font-size: $mb_md;
-                    font-family: "medium";
+                a {
+                    display: flex;
+                    justify-content: center;
+                    .join_btn {
+                        background-color: $join_btn;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        width: 100%;
+                        border-radius: 40px;
+                        font-size: $mb_md;
+                        font-family: "medium";
+                    }
                 }
             }
         }

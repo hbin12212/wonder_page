@@ -29,7 +29,7 @@ const Home = () => {
                     </div>
                     <div className="join_btn_wrapper">
                         <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
-                            <div className="join_btn shadow"> Join Us</div>
+                            <div className="join_btn shadow">Join Us</div>
                         </a>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
                     <div className="join_btn_wrapper">
                         <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
-                            <div className="join_btn shadow"> Join Us</div>
+                            <div className="join_btn shadow">Join Us</div>
                         </a>
                     </div>
                 </div>
