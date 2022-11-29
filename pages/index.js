@@ -28,7 +28,7 @@ const Home = () => {
                         <Image src={tags} alt="tags"></Image>
                     </div>
                     <div className="join_btn_wrapper">
-                        <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
+                        <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
                             <div className="join_btn shadow"> Join Us</div>
                         </a>
                     </div>
@@ -97,7 +97,7 @@ const Home = () => {
                         새로운 커리어 네트워크
                     </div>
                     <div className="join_btn_wrapper">
-                        <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
+                        <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
                             <div className="join_btn shadow"> Join Us</div>
                         </a>
                     </div>
