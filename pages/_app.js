@@ -33,7 +33,7 @@ const Home = () => {
                     </div>
                     <div className="join_btn_wrapper">
                         <div className="join_btn">
-                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank">
+                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
                                 Join Us
                             </a>
                         </div>
@@ -104,7 +104,7 @@ const Home = () => {
                     </div>
                     <div className="join_btn_wrapper">
                         <div className="join_btn">
-                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank">
+                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
                                 Join Us
                             </a>
                         </div>
