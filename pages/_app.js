@@ -11,7 +11,7 @@ import "../styles/globals.scss";
 const Home = () => {
     return (
         <div className="Home">
-            <div className="header">Wonder</div>
+            {/* <div className="header">Wonder</div> */}
             <div className="main">
                 <div className="sector1">
                     <div className="title">

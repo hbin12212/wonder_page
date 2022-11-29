@@ -11,7 +11,7 @@ export default function Home() {
                 <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
                     rel="stylesheet"
                 ></link>
             </Head>
