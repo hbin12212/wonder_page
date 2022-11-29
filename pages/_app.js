@@ -58,7 +58,7 @@ const Home = () => {
                             알려주세요
                         </div>
                     </div>
-                    <div className="img_wrapper shadow">
+                    <div className="img_wrapper">
                         <Image src={profile} alt="profile"></Image>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ const Home = () => {
                             말해주세요
                         </div>
                     </div>
-                    <div className="img_wrapper shadow">
+                    <div className="img_wrapper">
                         <Image src={content} alt="content"></Image>
                     </div>
                 </div>

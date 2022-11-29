@@ -1,9 +1,42 @@
 //FONT
 @font-face {
-    font-family: "SpoqaHanSansNeo-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "bold";
+    font-weight: 700;
+    src: local("SpoqaHanSansNeo-Bold"), url("/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"),
+        url("/fonts/SpoqaHanSansNeo-Bold.woff") format("woff"),
+        url("/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "medium";
+    font-weight: 500;
+    src: local("SpoqaHanSansNeo-Medium"), url("/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"),
+        url("/fonts/SpoqaHanSansNeo-Medium.woff") format("woff"),
+        url("/fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "regular";
+    font-weight: 400;
+    src: local("SpoqaHanSansNeo-Regular"), url("/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"),
+        url("/fonts/SpoqaHanSansNeo-Regular.woff") format("woff"),
+        url("/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "light";
+    font-weight: 300;
+    src: local("SpoqaHanSansNeo-Light"), url("/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"),
+        url("/fonts/SpoqaHanSansNeo-Light.woff") format("woff"),
+        url("/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "thin";
+    font-weight: 100;
+    src: local("SpoqaHanSansNeo-Thin"), url("/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2"),
+        url("/fonts/SpoqaHanSansNeo-Thin.woff") format("woff"),
+        url("/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype");
 }
 
 //FONT SIZE
@@ -21,12 +54,8 @@ $mb_sm: 10px;
 $sub_title: #7b8498;
 $join_btn: #a160ff;
 
-body {
-    background-color: rgb(245, 245, 244);
-}
-
 .Home {
-    font-family: "SpoqaHanSansNeo-Regular";
+    font-family: "regular";
 
     //BOX SHADOW
     .shadow {
@@ -45,7 +74,7 @@ body {
         //전체화면
         @media (min-width: 800px) {
             .section_tags {
-                padding: 30px 150px 120px 150px;
+                padding: 50px 150px 120px 150px;
                 .title {
                     text-align: center;
                 }
@@ -58,7 +87,7 @@ body {
                     margin-top: 40px;
                     margin-bottom: 40px;
                     img {
-                        max-width: 62%;
+                        max-width: 700px;
                         height: auto;
                     }
                 }
@@ -115,33 +144,41 @@ body {
 
         //<-----SECTION PROFILE, CONTENT----->
         //전체화면
-        @media (min-width: 1200px) {
+        @media (min-width: 1250px) {
             .section_profile {
-                padding: 120px 150px;
+                padding: 120px 160px;
                 display: flex;
                 justify-content: space-between;
                 .img_wrapper {
-                    border-radius: 20px;
                     img {
-                        width: 500px;
+                        border-radius: 20px;
+                        max-width: 500px;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
             .section_content {
-                padding: 120px 150px;
+                padding: 120px 160px;
                 display: flex;
                 justify-content: space-between;
                 .img_wrapper {
-                    border-radius: 20px;
                     img {
-                        width: 500px;
+                        border-radius: 20px;
+                        max-width: 500px;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
         } //테블릿1
-        @media (max-width: 1200px) and (min-width: 800px) {
+        @media (max-width: 1250px) and (min-width: 800px) {
             .section_profile {
                 padding: 120px 150px;
                 text-align: center;
@@ -151,10 +188,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
                     img {
-                        max-width: 100%;
+                        border-radius: 20px;
+                        max-width: 500px;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -167,10 +210,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
                     img {
-                        max-width: 100%;
+                        border-radius: 20px;
+                        max-width: 500px;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -185,10 +234,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
                     img {
+                        border-radius: 15px;
                         max-width: 100%;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -201,10 +256,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
                     img {
+                        border-radius: 15px;
                         max-width: 100%;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -220,10 +281,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
                     img {
+                        border-radius: 10px;
                         max-width: 100%;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -236,10 +303,16 @@ body {
                     }
                 }
                 .img_wrapper {
-                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
                     img {
+                        border-radius: 10px;
                         max-width: 100%;
                         height: auto;
+                        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+                        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+                            var(--tw-shadow);
                     }
                 }
             }
@@ -287,9 +360,9 @@ body {
         //전체화면
         @media (min-width: 800px) {
             .title {
+                font-family: "bold";
                 font-size: $pc_lg;
                 margin-bottom: 20px;
-                font-weight: 700;
             }
             .sub_title {
                 font-size: $pc_md;
@@ -307,15 +380,16 @@ body {
                     width: 400px;
                     border-radius: 40px;
                     font-size: $pc_sm;
+                    font-family: "medium";
                 }
             }
         }
         //테블릿
         @media (max-width: 800px) and (min-width: 450px) {
             .title {
+                font-family: "bold";
                 font-size: $tb_lg;
                 margin-bottom: 25px;
-                font-weight: 700;
             }
             .sub_title {
                 font-size: $tb_md;
@@ -333,14 +407,15 @@ body {
                     width: 400px;
                     border-radius: 40px;
                     font-size: $tb_md;
+                    font-family: "medium";
                 }
             }
         } //모바일
         @media (max-width: 450px) {
             .title {
+                font-family: "bold";
                 font-size: $mb_lg;
                 margin-bottom: 15px;
-                font-weight: 700;
             }
             .sub_title {
                 font-size: $mb_md;
@@ -358,6 +433,7 @@ body {
                     width: 100%;
                     border-radius: 40px;
                     font-size: $mb_md;
+                    font-family: "medium";
                 }
             }
         }
