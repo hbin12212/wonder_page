@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 //img
 import tags from "../public/img/tags.png";
 import content from "../public/img/content_mock.png";
@@ -11,9 +10,8 @@ import "../styles/globals.scss";
 const Home = () => {
     return (
         <div className="Home">
-            {/* <div className="header">Wonder</div> */}
             <div className="main">
-                <div className="sector1">
+                <div className="section_tags">
                     <div className="title">
                         어쩌면 우리는
                         <br />
@@ -32,15 +30,15 @@ const Home = () => {
                         <Image src={tags} alt="tags"></Image>
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn">
+                        <div className="join_btn shadow">
                             <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
                                 Join Us
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="sector2">
-                    <div className="left_wrapper">
+                <div className="section_profile">
+                    <div className="title_wrapper">
                         <div className="title">
                             소개하세요
                             <br />
@@ -60,12 +58,12 @@ const Home = () => {
                             알려주세요
                         </div>
                     </div>
-                    <div className="right_wrapper">
+                    <div className="img_wrapper shadow">
                         <Image src={profile} alt="profile"></Image>
                     </div>
                 </div>
-                <div className="sector3">
-                    <div className="left_wrapper">
+                <div className="section_content">
+                    <div className="title_wrapper">
                         <div className="title">
                             몰랐던 기회들과
                             <br />
@@ -85,11 +83,11 @@ const Home = () => {
                             말해주세요
                         </div>
                     </div>
-                    <div className="right_wrapper">
+                    <div className="img_wrapper shadow">
                         <Image src={content} alt="content"></Image>
                     </div>
                 </div>
-                <div className="sector4">
+                <div className="section_footer">
                     <div className="title">
                         Wonder에
                         <br />
@@ -103,7 +101,7 @@ const Home = () => {
                         새로운 커리어 네트워크
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn">
+                        <div className="join_btn shadow">
                             <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
                                 Join Us
                             </a>

@@ -1,3 +1,4 @@
+//FONT
 @font-face {
     font-family: "SpoqaHanSansNeo-Regular";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
@@ -5,8 +6,34 @@
     font-style: normal;
 }
 
+//FONT SIZE
+$pc_lg: 45px;
+$pc_md: 22px;
+$pc_sm: 18px;
+$tb_lg: 30px;
+$tb_md: 15px;
+$tb_sm: 10px;
+$mb_lg: 20px;
+$mb_md: 12px;
+$mb_sm: 10px;
+
+//COLOR
+$sub_title: #7b8498;
+$join_btn: #a160ff;
+
+body {
+    background-color: rgb(245, 245, 244);
+}
+
 .Home {
     font-family: "SpoqaHanSansNeo-Regular";
+
+    //BOX SHADOW
+    .shadow {
+        --tw-shadow: 0 9px 20px rgba(0, 0, 0, 0.12);
+        --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
 
     a {
         text-decoration: none;
@@ -14,11 +41,11 @@
     }
 
     .main {
-        //<-----SECTOR1----->
+        //<-----SECTION TAGS----->
         //전체화면
         @media (min-width: 800px) {
-            .sector1 {
-                padding: 50px 150px 120px 150px;
+            .section_tags {
+                padding: 30px 150px 120px 150px;
                 .title {
                     text-align: center;
                 }
@@ -28,17 +55,17 @@
                 .tags_img {
                     display: flex;
                     justify-content: center;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
                     img {
-                        max-width: 70%;
+                        max-width: 62%;
                         height: auto;
                     }
                 }
             }
         } //테블릿
         @media (max-width: 800px) and (min-width: 450px) {
-            .sector1 {
+            .section_tags {
                 padding: 50px 0px 100px 0px;
                 .title {
                     text-align: center;
@@ -62,7 +89,7 @@
             }
         } //모바일
         @media (max-width: 450px) {
-            .sector1 {
+            .section_tags {
                 padding: 50px 0px 100px 0px;
                 .title {
                     text-align: center;
@@ -85,163 +112,142 @@
                 }
             }
         }
-        //<-----SECTOR2,SECTOR3----->
+
+        //<-----SECTION PROFILE, CONTENT----->
         //전체화면
         @media (min-width: 1200px) {
-            .sector2 {
+            .section_profile {
                 padding: 120px 150px;
                 display: flex;
                 justify-content: space-between;
-                .right_wrapper {
+                .img_wrapper {
+                    border-radius: 20px;
                     img {
                         width: 500px;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 20px;
                     }
                 }
             }
-            .sector3 {
+            .section_content {
                 padding: 120px 150px;
                 display: flex;
                 justify-content: space-between;
-                .right_wrapper {
+                .img_wrapper {
+                    border-radius: 20px;
                     img {
                         width: 500px;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 20px;
                     }
                 }
             }
         } //테블릿1
-        @media (max-width: 1200px) and (min-width: 700px) {
-            .sector2 {
+        @media (max-width: 1200px) and (min-width: 800px) {
+            .section_profile {
                 padding: 120px 150px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 80px;
                     }
                 }
-                .right_wrapper {
-                    display: flex;
-                    justify-content: center;
+                .img_wrapper {
+                    border-radius: 20px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 20px;
                     }
                 }
             }
-            .sector3 {
+            .section_content {
                 padding: 120px 150px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 80px;
                     }
                 }
-                .right_wrapper {
+                .img_wrapper {
+                    border-radius: 20px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 20px;
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
                     }
                 }
             }
         } //테블릿2
-        @media (max-width: 700px) and (min-width: 450px) {
-            .sector2 {
+        @media (max-width: 800px) and (min-width: 450px) {
+            .section_profile {
                 padding: 100px 50px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 80px;
                     }
                 }
-                .right_wrapper {
-                    display: flex;
-                    justify-content: center;
+                .img_wrapper {
+                    border-radius: 15px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 15px;
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
                     }
                 }
             }
-            .sector3 {
+            .section_content {
                 padding: 100px 50px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 80px;
                     }
                 }
-                .right_wrapper {
+                .img_wrapper {
+                    border-radius: 15px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        border-radius: 15px;
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
                     }
                 }
             }
         }
         //모바일
         @media (max-width: 450px) {
-            .sector2 {
+            .section_profile {
                 padding: 100px 50px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 50px;
                     }
                 }
-                .right_wrapper {
-                    display: flex;
-                    justify-content: center;
+                .img_wrapper {
+                    border-radius: 10px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        border-radius: 10px;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
                     }
                 }
             }
-            .sector3 {
+            .section_content {
                 padding: 100px 50px;
                 text-align: center;
-                .left_wrapper {
+                .title_wrapper {
                     .sub_title {
                         margin-bottom: 50px;
                     }
                 }
-                .right_wrapper {
+                .img_wrapper {
+                    border-radius: 10px;
                     img {
                         max-width: 100%;
                         height: auto;
-                        border-radius: 10px;
-                        -webkit-box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
-                        box-shadow: 2px 4px 8px 5px rgba(178, 178, 178, 0.84);
                     }
                 }
             }
         }
 
-        //<-----SECTOR4----->
+        //<-----SECTION FOOTER----->
         @media (min-width: 800px) {
-            .sector4 {
+            .section_footer {
                 padding: 120px 150px 100px 150px;
                 .title {
                     text-align: center;
@@ -253,7 +259,7 @@
             }
         } //테블릿
         @media (max-width: 800px) and (min-width: 450px) {
-            .sector4 {
+            .section_footer {
                 padding: 100px 50px 50px 50px;
                 .title {
                     text-align: center;
@@ -265,7 +271,7 @@
             }
         } //모바일
         @media (max-width: 450px) {
-            .sector4 {
+            .section_footer {
                 padding: 100px 50px 50px 50px;
                 .title {
                     text-align: center;
@@ -277,85 +283,87 @@
             }
         }
 
-        //공통
+        //<-----공통----->
         //전체화면
         @media (min-width: 800px) {
             .title {
-                font-size: 40px;
-                margin-bottom: 35px;
+                font-size: $pc_lg;
+                margin-bottom: 20px;
+                font-weight: 700;
             }
             .sub_title {
-                font-size: 20px;
-                color: #7b8498;
-                font-weight: 400 !important;
+                font-size: $pc_md;
+                color: $sub_title;
             }
             .join_btn_wrapper {
                 display: flex;
                 justify-content: center;
                 .join_btn {
-                    background-color: #a160ff;
+                    background-color: $join_btn;
                     color: white;
                     padding: 15px;
                     text-align: center;
                     cursor: pointer;
-                    width: 300px;
+                    width: 400px;
                     border-radius: 40px;
-                    font-size: 18px;
+                    font-size: $pc_sm;
                 }
             }
         }
         //테블릿
         @media (max-width: 800px) and (min-width: 450px) {
             .title {
-                font-size: 30px;
+                font-size: $tb_lg;
                 margin-bottom: 25px;
+                font-weight: 700;
             }
             .sub_title {
-                font-size: 15px;
-                color: #7b8498;
-                font-weight: 400 !important;
+                font-size: $tb_md;
+                color: $sub_title;
             }
             .join_btn_wrapper {
                 display: flex;
                 justify-content: center;
                 .join_btn {
-                    background-color: #a160ff;
+                    background-color: $join_btn;
                     color: white;
-                    padding: 10px;
+                    padding: 15px;
                     text-align: center;
                     cursor: pointer;
-                    width: 100%;
+                    width: 400px;
                     border-radius: 40px;
-                    font-size: 15px;
+                    font-size: $tb_md;
                 }
             }
         } //모바일
         @media (max-width: 450px) {
             .title {
-                font-size: 20px;
+                font-size: $mb_lg;
                 margin-bottom: 15px;
+                font-weight: 700;
             }
             .sub_title {
-                font-size: 10px;
-                color: #7b8498;
-                font-weight: 400 !important;
+                font-size: $mb_md;
+                color: $sub_title;
             }
             .join_btn_wrapper {
                 display: flex;
                 justify-content: center;
                 .join_btn {
-                    background-color: #a160ff;
+                    background-color: $join_btn;
                     color: white;
                     padding: 10px;
                     text-align: center;
                     cursor: pointer;
                     width: 100%;
                     border-radius: 40px;
-                    font-size: 10px;
+                    font-size: $mb_md;
                 }
             }
         }
     }
+
+    //<-----FOOTER----->
     @media (min-width: 450px) {
         .footer {
             color: #7b8498;
