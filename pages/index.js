@@ -28,11 +28,9 @@ const Home = () => {
                         <Image src={tags} alt="tags"></Image>
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn shadow">
-                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
-                                Join Us
-                            </a>
-                        </div>
+                        <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
+                            <div className="join_btn shadow"> Join Us</div>
+                        </a>
                     </div>
                 </div>
                 <div className="section_profile">
@@ -99,11 +97,9 @@ const Home = () => {
                         새로운 커리어 네트워크
                     </div>
                     <div className="join_btn_wrapper">
-                        <div className="join_btn shadow">
-                            <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
-                                Join Us
-                            </a>
-                        </div>
+                        <a href="https://page.stibee.com/subscriptions/219667" target="_blank" rel="noreferrer">
+                            <div className="join_btn shadow"> Join Us</div>
+                        </a>
                     </div>
                 </div>
             </div>
