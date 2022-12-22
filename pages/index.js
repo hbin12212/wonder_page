@@ -1,109 +1,129 @@
 import React from "react";
 import Image from "next/image";
+
 //img
-import tags from "../public/img/tags.png";
-import content from "../public/img/content_mock.png";
-import profile from "../public/img/profile_mock.png";
+import profile from "../public/img/profile_mockup.png";
+import profile1 from "../public/img/profile_detail1.png";
+import profile2 from "../public/img/profile_detail2.png";
+import profile3 from "../public/img/profile_detail3.png";
+import wonder from "../public/img/wonder_mockup.png";
+import call from "../public/img/call_mockup.png";
 
 const Home = () => {
     return (
         <div className="Home">
-            <div className="main">
-                <div className="section_tags">
-                    <div className="title">
-                        어쩌면 우리는
-                        <br />
-                        직업 그 이상.
-                    </div>
-                    <div className="sub_title">
-                        다양한 관심사를 갖는 당신을 위한
-                        <br />
-                        이력이 아닌 관심사 기반의
-                        <br />
-                        새로운 커리어 네트워크
-                        <br />
-                        Wonder.
-                    </div>
-                    <div className="tags_img">
-                        <Image src={tags} alt="tags"></Image>
-                    </div>
-                    <div className="join_btn_wrapper">
-                        <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
-                            <div className="join_btn shadow">Join Us</div>
-                        </a>
-                    </div>
-                </div>
+            <div className="header">
+                <div></div>
+                <div>Wonder</div>
+                <div></div>
+            </div>
+            <div className="body">
                 <div className="section_profile">
-                    <div className="title_wrapper">
-                        <div className="title">
-                            소개하세요
-                            <br />
-                            나는 무엇에 관심이 있는지
-                            <br />
-                            무슨 일을 하고 싶은지
+                    <div></div>
+                    <div className="main">
+                        <div className="title_wrapper">
+                            <div>
+                                <div className="title">
+                                    <div className="service_name"> Wonder</div>
+                                    <div>다양한 나를 위한 프로필</div>
+                                </div>
+                                <div className="sub_title">
+                                    직무, 이력으로만 설명할 수 없는
+                                    <br />
+                                    나를 위한 가장 완전한 프로필을 만듭니다
+                                </div>
+                                <div className="join_btn_wrapper">
+                                    <a href="/" target="_blank" rel="noreferrer">
+                                        <div className="join_btn">얼리억세스 신청하기</div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div className="sub_title">
-                            우리는 당신의 이력이 궁금하지 않아요
-                            <br />
-                            무슨 생각을 하는 사람인지
-                            <br />
-                            무슨 재미있는 관심사들이 있을지
-                            <br />
-                            무슨 일을 나와 함께 해 볼 수 있을지
-                            <br />
-                            알려주세요
+                        <div className="img_wrapper">
+                            <Image src={profile} alt="profile"></Image>
                         </div>
                     </div>
-                    <div className="img_wrapper">
-                        <Image src={profile} alt="profile"></Image>
-                    </div>
+                    <div></div>
                 </div>
-                <div className="section_content">
-                    <div className="title_wrapper">
-                        <div className="title">
-                            몰랐던 기회들과
-                            <br />
-                            함께 하고 싶은 사람을
-                            <br />
-                            찾아보세요
+                <div className="section_profile_detail">
+                    <div></div>
+                    <div className="main">
+                        <div className="title_wrapper">
+                            <div className="sub_title">다양한 관심사를 가진 당신을 위해 설계된</div>
+                            <div className="title">Wonder의 개인 프로필</div>
                         </div>
-                        <div className="sub_title">
-                            아주 사소한 일이라도 좋아요
-                            <br />
-                            무슨 일을 함께 해보고 싶은지
-                            <br />
-                            어떤 사람과 함께 하고 싶은지
-                            <br />
-                            나는 이걸 왜 하려고 하는지
-                            <br />
-                            말해주세요
+                        <div className="img_wrapper">
+                            <div className="interest_wrapper">
+                                <div className="title">관심사 태그</div>
+                                <div className="sub_title">
+                                    우리가 무엇에 관심 있는지
+                                    <br />
+                                    자유롭게 태그로 정리해요
+                                </div>
+                                <div className="img_wrapper">
+                                    <Image src={profile1} alt="interest"></Image>
+                                </div>
+                            </div>
+                            <div className="highlight_wrapper">
+                                <div className="title">하이라이트</div>
+                                <div className="sub_title">
+                                    작업물, 유튜브 영상, 인스타 등
+                                    <br />
+                                    보여주고 싶은 링크들을 등록해요
+                                </div>
+                                <div className="img_wrapper">
+                                    <Image src={profile2} alt="highlight"></Image>
+                                </div>
+                            </div>
+                            <div className="wonder_wrapper">
+                                <div className="title">하고싶어요</div>
+                                <div className="sub_title">
+                                    지금 무슨 일을 하고 싶은가요?
+                                    <br />
+                                    커피마시기? 유튜브 출연하기?
+                                </div>
+                                <div className="img_wrapper">
+                                    <Image src={profile3} alt="want"></Image>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="img_wrapper">
-                        <Image src={content} alt="content"></Image>
-                    </div>
+                    <div></div>
                 </div>
-                <div className="section_footer">
-                    <div className="title">
-                        Wonder에
-                        <br />
-                        지금 참여하세요
+                <div className="section_wonder">
+                    <div></div>
+                    <div className="main">
+                        <div className="title_wrapper">
+                            <div className="sub_title">꼭 필요한 기회들을 몰라서 놓치지 않도록</div>
+                            <div className="title">하고싶어요 피드</div>
+                        </div>
+                        <div className="img_wrapper">
+                            <div className="img_wrapper">
+                                <Image src={wonder} alt="wonder"></Image>
+                            </div>
+                        </div>
                     </div>
-                    <div className="sub_title">
-                        다양한 관심사를 갖는 당신을 위한
-                        <br />
-                        이력이 아닌 관심사 기반의
-                        <br />
-                        새로운 커리어 네트워크
+                    <div></div>
+                </div>
+                <div className="section_call">
+                    <div></div>
+                    <div className="main">
+                        <div className="title_wrapper">
+                            <div className="sub_title">누군가 나를 찾는 것 같아요</div>
+                            <div className="title">버튼 한 번에 연락하기</div>
+                        </div>
+                        <div className="img_wrapper">
+                            <div className="img_wrapper">
+                                <Image src={call} alt="call"></Image>
+                            </div>
+                        </div>
                     </div>
-                    <div className="join_btn_wrapper">
-                        <a href="http://bit.ly/3ATh4jw" target="_blank" rel="noreferrer">
-                            <div className="join_btn shadow">Join Us</div>
-                        </a>
-                    </div>
+                    <div></div>
                 </div>
             </div>
-            <div className="footer">2022.WonderLab</div>
+            <div className="footer">
+                <div></div> <div className="main"></div> <div></div>
+            </div>
         </div>
     );
 };
