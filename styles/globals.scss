@@ -44,25 +44,24 @@ $pc_lg: 44px;
 $pc_md: 32px;
 $pc_rg: 20px;
 $pc_sm: 15px;
+$pc_exsm: 12px;
 $tb_lg: 30px;
-$tb_md: 15px;
+$tb_md: 20px;
 $tb_rg: 15px;
 $tb_sm: 10px;
 $mb_lg: 20px;
 $mb_md: 12px;
+$mb_rg: 18px;
 $mb_sm: 10px;
 
 //COLOR
 $primary: #5d6ef3;
 $black: #000000;
 $dark_gray: #617885;
+$gray: #e0e8ed;
 $light_gray: #f5f8fa;
 $white: #ffffff;
 
-a {
-    text-decoration: none;
-    color: $white;
-}
 body {
     margin: 0;
 }
@@ -75,141 +74,527 @@ body {
         --tw-shadow-colored: 0 9px 20px var(--tw-shadow-color);
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     }
-    //공통
-    .title {
-        font-family: "bold";
-        font-size: $pc_lg;
-    }
-    .sub_title {
-        font-size: $pc_rg;
-        color: $dark_gray;
-    }
 
     //HEADER
     .header {
+        font-family: "bold";
         position: sticky;
         top: 0;
         background-color: $white;
         display: grid;
         grid-template-columns: 1fr 6fr 1fr;
         padding: 15px 0px;
+        border-bottom: 1px solid $gray;
+        font-size: $mb_rg;
+        a {
+            text-decoration: none;
+            color: $dark_gray;
+            font-family: "medium";
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            .menu {
+                font-size: $pc_sm;
+                margin-left: 30px;
+            }
+        }
     }
 
-    //BODY
-    .body {
-        .section_profile {
+    //PC
+    @media (min-width: 1280px) {
+        //공통
+        .title {
+            font-family: "bold";
+            font-size: $pc_lg;
+        }
+        .sub_title {
+            font-size: $pc_rg;
+            color: $dark_gray;
+        }
+        .mb {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        //BODY
+        .body {
+            //<--SECTION PROFILE-->
+            .section_profile {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 80px 0px;
+                .join_btn_wrapper {
+                    display: none;
+                }
+                .main {
+                    display: flex;
+                    justify-content: space-between;
+                    .title_wrapper {
+                        display: flex;
+                        align-items: center;
+                        .title {
+                            margin-bottom: 10px;
+                            .service_name {
+                                font-size: $pc_md;
+                            }
+                        }
+                        .sub_title {
+                            margin-bottom: 80px;
+                        }
+                        .join_btn_wrapper_pc {
+                            color: $white;
+                            width: fit-content;
+                            font-size: $pc_sm;
+                            .join_btn {
+                                background-color: $primary;
+                                padding: 10px 40px;
+                                border-radius: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .img_wrapper {
+                        img {
+                            max-width: 520px;
+                            height: auto;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            //<--SECTION PROFILE DETAIL-->
+            .section_profile_detail {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    .title {
+                        text-align: center;
+                        font-size: $pc_rg !important;
+                        margin-bottom: 5px;
+                    }
+                    .sub_title {
+                        text-align: center;
+                        font-size: $pc_sm !important;
+                        margin-bottom: 50px;
+                    }
+                    .img_wrapper {
+                        img {
+                            width: auto;
+                            max-height: 459px;
+                        }
+                    }
+                }
+            }
+            //<--SECTION WONDER-->
+            .section_wonder {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 850px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+            //<--SECTION CALL-->
+            .section_call {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 850px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //TABLET
+    @media (max-width: 1280px) and (min-width: 600px) {
+        //공통
+        .title {
+            font-family: "bold";
+            font-size: $pc_lg;
+        }
+        .sub_title {
+            font-size: $pc_rg;
+            color: $dark_gray;
+        }
+        .join_btn_wrapper_pc {
+            display: none;
+        }
+        .pc {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        //BODY
+        .body {
+            //<--SECTION PROFILE-->
+            .section_profile {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 80px 0px;
+                .main {
+                    .title_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .title {
+                            margin-bottom: 10px;
+                            .service_name {
+                                font-size: $pc_md;
+                            }
+                        }
+                        .sub_title {
+                            margin-bottom: 80px;
+                        }
+                    }
+                    .img_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            max-width: 500px;
+                            height: auto;
+                            margin: 0;
+                        }
+                    }
+                }
+                .join_btn_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    color: $white;
+                    font-size: $pc_sm;
+                    margin-top: 80px;
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 10px 40px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            //<--SECTION PROFILE DETAIL-->
+            .section_profile_detail {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    .title {
+                        text-align: center;
+                        font-size: $pc_rg !important;
+                        margin-top: 100px;
+                        margin-bottom: 10px;
+                    }
+                    .sub_title {
+                        text-align: center;
+                        font-size: $pc_sm !important;
+                        margin-bottom: 30px;
+                    }
+                    .img_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            max-width: 600px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            //<--SECTION WONDER-->
+            .section_wonder {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 600px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+            //<--SECTION CALL-->
+            .section_call {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 80px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 600px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //MOBILE
+    @media (max-width: 600px) {
+        //공통
+        .title {
+            font-family: "bold";
+            font-size: $tb_lg;
+        }
+        .sub_title {
+            font-size: $tb_rg;
+            color: $dark_gray;
+        }
+        .join_btn_wrapper_pc {
+            display: none;
+        }
+        .pc {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        //BODY
+        .body {
+            //<--SECTION PROFILE-->
+            .section_profile {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 120px 0px;
+                .main {
+                    .title_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        .title {
+                            margin-bottom: 10px;
+                            .service_name {
+                                font-size: $tb_md;
+                            }
+                        }
+                        .sub_title {
+                            margin-bottom: 80px;
+                        }
+                    }
+                    .img_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            max-width: 300px;
+                            height: auto;
+                            margin: 0;
+                        }
+                    }
+                }
+                .join_btn_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    color: $white;
+                    font-size: $pc_sm;
+                    margin-top: 80px;
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 10px 40px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            //<--SECTION PROFILE DETAIL-->
+            .section_profile_detail {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 120px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    .title {
+                        text-align: center;
+                        font-size: $tb_md !important;
+                        margin-top: 100px;
+                        margin-bottom: 10px;
+                    }
+                    .sub_title {
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+                    .img_wrapper {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            max-width: 300px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            //<--SECTION WONDER-->
+            .section_wonder {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                background-color: $light_gray;
+                padding: 120px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 300px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+            //<--SECTION CALL-->
+            .section_call {
+                display: grid;
+                grid-template-columns: 1fr 6fr 1fr;
+                padding: 120px 0px;
+                .title_wrapper {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .img_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 300px;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //PC&TABLET
+    @media (min-width: 600px) {
+        //FOOTER
+        .footer {
             display: grid;
             grid-template-columns: 1fr 6fr 1fr;
             background-color: $light_gray;
             padding: 80px 0px;
             .main {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 .title_wrapper {
-                    display: flex;
-                    align-items: center;
-                    .title {
-                        margin-bottom: 10px;
-                        .service_name {
-                            font-size: $pc_md;
-                        }
-                    }
+                    padding: 120px 0px;
                     .sub_title {
-                        margin-bottom: 80px;
-                    }
-                    .join_btn_wrapper {
-                        color: $white;
-                        width: fit-content;
-                        font-size: $pc_sm;
-                        .join_btn {
-                            background-color: $primary;
-                            padding: 10px 40px;
-                            border-radius: 5px;
-                            cursor: pointer;
-                        }
+                        margin-top: 5px;
                     }
                 }
-                .img_wrapper {
-                    img {
-                        max-width: 550px;
-                        height: auto;
-                        margin: 0;
+                .join_btn_wrapper {
+                    margin-top: 30px;
+                    color: $white;
+                    font-size: $pc_sm;
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 10px 40px;
+                        border-radius: 5px;
+                        cursor: pointer;
                     }
                 }
-            }
-        }
-        .section_profile_detail {
-            display: grid;
-            grid-template-columns: 1fr 6fr 1fr;
-            padding: 80px 0px;
-            .title_wrapper {
-                text-align: center;
-                margin-bottom: 50px;
-            }
-            .img_wrapper {
-                .title {
-                    text-align: center;
-                    font-size: $pc_rg !important;
-                    margin-bottom: 5px;
-                }
-                .sub_title {
-                    text-align: center;
-                    font-size: $pc_sm !important;
-                    margin-bottom: 50px;
-                }
-                display: flex;
-                justify-content: space-between;
-                .img_wrapper {
-                    img {
-                        max-width: 400px;
-                        height: auto;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-        .section_wonder {
-            display: grid;
-            grid-template-columns: 1fr 6fr 1fr;
-            background-color: $light_gray;
-            padding: 80px 0px;
-            .title_wrapper {
-                text-align: center;
-                margin-bottom: 50px;
-            }
-            .img_wrapper {
-                display: flex;
-                justify-content: center;
-                img {
-                    max-width: 850px;
-                    height: auto;
-                    margin: 0;
-                }
-            }
-        }
-        .section_call {
-            display: grid;
-            grid-template-columns: 1fr 6fr 1fr;
-            padding: 80px 0px;
-            .title_wrapper {
-                text-align: center;
-                margin-bottom: 50px;
-            }
-            .img_wrapper {
-                display: flex;
-                justify-content: center;
-                img {
-                    max-width: 850px;
-                    height: auto;
-                    margin: 0;
+                .footer_wrapper {
+                    color: $dark_gray;
+                    font-size: $pc_exsm;
+                    margin-top: 12px;
                 }
             }
         }
     }
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 6fr 1fr;
-        background-color: $light_gray;
-        padding: 80px 0px;
+    //MOBILE
+    @media (max-width: 600px) {
+        //FOOTER
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 6fr 1fr;
+            background-color: $light_gray;
+            padding: 120px 0px;
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .title_wrapper {
+                    padding: 120px 0px;
+                    .sub_title {
+                        margin-top: 5px;
+                    }
+                }
+                .join_btn_wrapper {
+                    margin-top: 30px;
+                    color: $white;
+                    font-size: $pc_sm;
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 15px 40px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .footer_wrapper {
+                    color: $dark_gray;
+                    font-size: $mb_sm;
+                    margin-top: 15px;
+                }
+            }
+        }
     }
 }

@@ -1,20 +1,33 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-//img
+//IMG
 import profile from "../public/img/profile_mockup.png";
 import profile1 from "../public/img/profile_detail1.png";
 import profile2 from "../public/img/profile_detail2.png";
 import profile3 from "../public/img/profile_detail3.png";
+import profile4 from "../public/img/profile_detail4.png";
+import profile5 from "../public/img/profile_detail5.png";
+import profile6 from "../public/img/profile_detail6.png";
 import wonder from "../public/img/wonder_mockup.png";
+import wonder_mb from "../public/img/wonder_mockup_mb.png";
 import call from "../public/img/call_mockup.png";
+import call_mb from "../public/img/call_mockup_mb.png";
 
 const Home = () => {
     return (
         <div className="Home">
             <div className="header">
                 <div></div>
-                <div>Wonder</div>
+                <div className="main">
+                    <div className="logo">Wonder</div>
+                    <div className="menu">
+                        <a href="https://22hours.oopy.io/" target="_blank" rel="noreferrer">
+                            <div className="blog">블로그</div>
+                        </a>
+                    </div>
+                </div>
                 <div></div>
             </div>
             <div className="body">
@@ -32,15 +45,20 @@ const Home = () => {
                                     <br />
                                     나를 위한 가장 완전한 프로필을 만듭니다
                                 </div>
-                                <div className="join_btn_wrapper">
-                                    <a href="/" target="_blank" rel="noreferrer">
+                                <div className="join_btn_wrapper_pc">
+                                    <Link target="_blank" href="/contact">
                                         <div className="join_btn">얼리억세스 신청하기</div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="img_wrapper">
-                            <Image src={profile} alt="profile"></Image>
+                            <Image className="shadow" src={profile} alt="profile"></Image>
+                        </div>
+                        <div className="join_btn_wrapper">
+                            <Link target="_blank" href="/contact">
+                                <div className="join_btn">얼리억세스 신청하기</div>
+                            </Link>
                         </div>
                     </div>
                     <div></div>
@@ -61,7 +79,8 @@ const Home = () => {
                                     자유롭게 태그로 정리해요
                                 </div>
                                 <div className="img_wrapper">
-                                    <Image src={profile1} alt="interest"></Image>
+                                    <Image className="pc" src={profile1} alt="interest1"></Image>
+                                    <Image className="mb" src={profile4} alt="interest2"></Image>
                                 </div>
                             </div>
                             <div className="highlight_wrapper">
@@ -72,7 +91,8 @@ const Home = () => {
                                     보여주고 싶은 링크들을 등록해요
                                 </div>
                                 <div className="img_wrapper">
-                                    <Image src={profile2} alt="highlight"></Image>
+                                    <Image className="pc" src={profile2} alt="highlight1"></Image>
+                                    <Image className="mb" src={profile5} alt="highlight2"></Image>
                                 </div>
                             </div>
                             <div className="wonder_wrapper">
@@ -83,7 +103,8 @@ const Home = () => {
                                     커피마시기? 유튜브 출연하기?
                                 </div>
                                 <div className="img_wrapper">
-                                    <Image src={profile3} alt="want"></Image>
+                                    <Image className="pc" src={profile3} alt="want1"></Image>
+                                    <Image className="mb" src={profile6} alt="want2"></Image>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +120,8 @@ const Home = () => {
                         </div>
                         <div className="img_wrapper">
                             <div className="img_wrapper">
-                                <Image src={wonder} alt="wonder"></Image>
+                                <Image className="pc" src={wonder} alt="wonder1"></Image>
+                                <Image className="mb" src={wonder_mb} alt="wonder2"></Image>
                             </div>
                         </div>
                     </div>
@@ -114,7 +136,8 @@ const Home = () => {
                         </div>
                         <div className="img_wrapper">
                             <div className="img_wrapper">
-                                <Image src={call} alt="call"></Image>
+                                <Image className="pc" src={call} alt="call1"></Image>
+                                <Image className="mb" src={call_mb} alt="call2"></Image>
                             </div>
                         </div>
                     </div>
@@ -122,7 +145,28 @@ const Home = () => {
                 </div>
             </div>
             <div className="footer">
-                <div></div> <div className="main"></div> <div></div>
+                <div></div>
+                <div className="main">
+                    <div className="title_wrapper">
+                        <div className="title">Wonder</div>
+                        <div className="sub_title">
+                            다양한 관심사와 매력을 가진 <br />
+                            우리를 위한 <br />
+                            새로운 네트워크
+                        </div>
+                        <div className="join_btn_wrapper">
+                            <Link href="/contact" target="_blank">
+                                <div className="join_btn">얼리억세스 신청하기</div>
+                            </Link>
+                        </div>
+                        <div className="footer_wrapper">
+                            2023. 01 베타 테스트 시작 예정
+                            <br />
+                            @2022 WonderLab
+                        </div>
+                    </div>
+                </div>
+                <div></div>
             </div>
         </div>
     );
