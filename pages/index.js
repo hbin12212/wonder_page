@@ -21,11 +21,18 @@ const Home = () => {
             <div className="header">
                 <div></div>
                 <div className="main">
-                    <div className="logo">Wonder</div>
                     <div className="menu">
-                        <a href="https://22hours.oopy.io/" target="_blank" rel="noreferrer">
-                            <div className="blog">블로그</div>
-                        </a>
+                        <div className="logo">Wonder</div>
+                        <div className="blog">
+                            <a href="https://22hours.oopy.io/" target="_blank" rel="noreferrer">
+                                <div>블로그</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="join_btn_wrapper">
+                        <Link target="_blank" href="/contact">
+                            <div className="join_btn">베타 테스터 신청하기</div>
+                        </Link>
                     </div>
                 </div>
                 <div></div>
@@ -47,7 +54,7 @@ const Home = () => {
                                 </div>
                                 <div className="join_btn_wrapper_pc">
                                     <Link target="_blank" href="/contact">
-                                        <div className="join_btn">얼리억세스 신청하기</div>
+                                        <div className="join_btn">베타 테스터 신청하기</div>
                                     </Link>
                                 </div>
                             </div>
@@ -57,7 +64,7 @@ const Home = () => {
                         </div>
                         <div className="join_btn_wrapper">
                             <Link target="_blank" href="/contact">
-                                <div className="join_btn">얼리억세스 신청하기</div>
+                                <div className="join_btn">베타 테스터 신청하기</div>
                             </Link>
                         </div>
                     </div>
@@ -156,7 +163,7 @@ const Home = () => {
                         </div>
                         <div className="join_btn_wrapper">
                             <Link href="/contact" target="_blank">
-                                <div className="join_btn">얼리억세스 신청하기</div>
+                                <div className="join_btn">베타 테스터 신청하기</div>
                             </Link>
                         </div>
                         <div className="footer_wrapper">

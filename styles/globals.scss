@@ -75,28 +75,100 @@ body {
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     }
 
-    //HEADER
-    .header {
-        font-family: "bold";
-        position: sticky;
-        top: 0;
-        background-color: $white;
-        display: grid;
-        grid-template-columns: 1fr 6fr 1fr;
-        padding: 15px 0px;
-        border-bottom: 1px solid $gray;
-        font-size: $mb_rg;
-        a {
-            text-decoration: none;
-            color: $dark_gray;
-            font-family: "medium";
+    //PC&TABLET
+    @media (min-width: 600px) {
+        //HEADER
+        .header {
+            font-family: "bold";
+            position: sticky;
+            top: 0;
+            background-color: $white;
+            display: grid;
+            grid-template-columns: 1fr 6fr 1fr;
+            padding: 15px 0px;
+            border-bottom: 1px solid $gray;
+            font-size: $mb_rg;
+            a {
+                text-decoration: none;
+                color: $dark_gray;
+                font-family: "medium";
+            }
+            .main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    .logo {
+                        font-size: $pc_rg;
+                    }
+                    .blog {
+                        margin-left: 30px;
+                        font-size: $pc_sm;
+                    }
+                }
+                .join_btn_wrapper {
+                    font-size: $pc_sm;
+                    a {
+                        color: $white;
+                    }
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
-        .main {
-            display: flex;
-            align-items: center;
-            .menu {
-                font-size: $pc_sm;
-                margin-left: 30px;
+    }
+
+    //MOBILE
+    @media (max-width: 600px) {
+        //HEADER
+        .header {
+            font-family: "bold";
+            position: sticky;
+            top: 0;
+            background-color: $white;
+            display: grid;
+            grid-template-columns: 1fr 8fr 1fr;
+            padding: 15px 0px;
+            border-bottom: 1px solid $gray;
+            font-size: $mb_rg;
+            a {
+                text-decoration: none;
+                color: $dark_gray;
+                font-family: "medium";
+            }
+            .main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    .logo {
+                        font-size: $pc_sm;
+                    }
+                    .blog {
+                        margin-left: 20px;
+                        font-size: $pc_exsm;
+                    }
+                }
+                .join_btn_wrapper {
+                    font-size: $mb_md;
+                    a {
+                        color: $white;
+                    }
+                    .join_btn {
+                        background-color: $primary;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
@@ -406,7 +478,7 @@ body {
             //<--SECTION PROFILE-->
             .section_profile {
                 display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
+                grid-template-columns: 1fr 8fr 1fr;
                 background-color: $light_gray;
                 padding: 120px 0px;
                 .main {
@@ -452,7 +524,7 @@ body {
             //<--SECTION PROFILE DETAIL-->
             .section_profile_detail {
                 display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
+                grid-template-columns: 1fr 8fr 1fr;
                 padding: 120px 0px;
                 .title_wrapper {
                     text-align: center;
@@ -482,7 +554,7 @@ body {
             //<--SECTION WONDER-->
             .section_wonder {
                 display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
+                grid-template-columns: 1fr 8fr 1fr;
                 background-color: $light_gray;
                 padding: 120px 0px;
                 .title_wrapper {
@@ -502,7 +574,7 @@ body {
             //<--SECTION CALL-->
             .section_call {
                 display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
+                grid-template-columns: 1fr 8fr 1fr;
                 padding: 120px 0px;
                 .title_wrapper {
                     text-align: center;
@@ -564,7 +636,7 @@ body {
         //FOOTER
         .footer {
             display: grid;
-            grid-template-columns: 1fr 6fr 1fr;
+            grid-template-columns: 1fr 8fr 1fr;
             background-color: $light_gray;
             padding: 120px 0px;
             .main {
