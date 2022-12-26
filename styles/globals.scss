@@ -261,6 +261,8 @@ body {
                         margin-bottom: 50px;
                     }
                     .img_wrapper {
+                        display: flex;
+                        justify-content: center;
                         img {
                             width: auto;
                             max-height: 459px;
